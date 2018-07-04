@@ -1,0 +1,7 @@
+{
+  "name"  : "steadystatecycles",
+  "alias" : ["steadystatecycles.com", "www.steadystatecycles.com"],
+  "static": {
+    "cleanUrls": true
+  }
+}
