@@ -2,13 +2,13 @@
   <div class="ssc-logo">
     <div class="slideshow logo-mask">
       <img
-        src="https://images.unsplash.com/photo-1494488802316-82250d81cfcc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=776ce711096a91e41ac905d3556361e3&auto=format&fit=crop&w=1650&q=80"
+        src="~assets/photos/photo-1453169753818-2feab4b4246d.jpeg"
         alt="">
       <img
-        src="https://images.unsplash.com/photo-1453169753818-2feab4b4246d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4e6a8d1ca1a7de2290aceb0e458ce435&auto=format&fit=crop&w=1567&q=80"
+        src="~assets/photos/photo-1494488802316-82250d81cfcc.jpeg"
         alt="">
       <img
-        src="https://images.unsplash.com/photo-1512588920942-9dc07b71d9e4?ixlib=rb-0.3.5&s=5b34c9a8a0b878b9c8aea550f383806b&auto=format&fit=crop&w=2378&q=80"
+        src="~assets/photos/photo-1512588920942-9dc07b71d9e4.jpeg"
         alt="">
     </div>
     <svg
