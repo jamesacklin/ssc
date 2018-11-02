@@ -1,0 +1,24 @@
+<template>
+  <div>
+    <nuxt/>
+  </div>
+</template>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: white;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-weight: 800;
+  text-rendering: optimizeLegibility;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+</style>
