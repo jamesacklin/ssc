@@ -7,15 +7,22 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: pkg.title,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: pkg.description },
+      { property: 'og:url', content: 'https://www.steadystatecycles.com/' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:title', content: pkg.description },
+      { property: 'og:description', content: '' },
+      {
+        property: 'og:image',
+        content: 'https://www.steadystatecycles.com/assets/og-preview.png'
+      },
+      { name: 'twitter:card', content: 'summary_large_image' }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
 
   /*
@@ -27,13 +34,14 @@ module.exports = {
   ** Global CSS
   */
   css: [
+    'tachyons/css/tachyons.min.css',
+    '@fortawesome/fontawesome-svg-core/styles.css'
   ],
 
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-  ],
+  plugins: ['~/plugins/fontawesome.js'],
 
   /*
   ** Nuxt.js modules

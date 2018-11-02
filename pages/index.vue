@@ -1,66 +1,35 @@
 <template>
   <section class="container">
-    <div>
-      <logo/>
-      <h1 class="title">
-        ssc
-      </h1>
-      <h2 class="subtitle">
-        A webapp for Steady State Cycles
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
+    <logo/>
+    <div class="mw7 ph3 pt4 pt6-m pt7-l center">
+      <TextLogo />
+      <div class="measure lh-copy">
+        <p class="f3 mb5">A Pittsburgh cycling shop for top-tier road and mountain products and service.</p>
+        <ul class="list relative pl0 ml4">
+          <li class="mb3"><span class="fa-li"><font-awesome-icon icon="phone" /></span>(412) 462-4193</li>
+          <li class="mb3"><span class="fa-li"><font-awesome-icon icon="envelope-open" /></span>steadystatecyclespgh@gmail.com</li>
+          <li class="mb3"><span class="fa-li"><font-awesome-icon icon="compass" /></span>347 Lebanon Rd. West Mifflin, PA 15122</li>
+          <li class="mb3"><span class="fa-li"><font-awesome-icon icon="clock" /></span>Open Weekdays 10AM - 7PM<br>Saturday by Appointment<br>Closed Sunday</li>
+        </ul>
+      </div>
+      <div class="tc pv5">
+        <img
+          src="~assets/white-diamond.svg"
+          alt="Steady State Cycles"
+          class="mw4">
       </div>
     </div>
   </section>
 </template>
 
-<script>
+  <script>
 import Logo from '~/components/Logo.vue'
+import TextLogo from '~/components/TextLogo.vue'
 
 export default {
   components: {
-    Logo
+    Logo,
+    TextLogo
   }
 }
 </script>
-
-<style>
-
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
