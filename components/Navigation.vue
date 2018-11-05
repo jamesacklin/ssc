@@ -1,6 +1,6 @@
 <template lang="html">
-  <nav>
-    <ul class="list f3 fr pr3">
+  <nav class="cf">
+    <ul class="list f3 fr pr3 pr4-m pr5-l pt0 pt4-l">
       <li>
         <nuxt-link
           class="link"
@@ -33,16 +33,25 @@ export default {
   .link {
     color: white;
     position: relative;
+    transition: all 0.2s ease;
+  }
+  .link:before {
+    transition: all 0.2s ease;
+    content: "";
+    position: absolute;
+    top: -0.5em;
+    width: 0.888em;
+    border-top: 0.2em solid white;
+    opacity: 0;
+  }
+  .link:hover {
+    opacity: 0.8;
   }
   .link:focus {
     outline: none;
   }
   .link.nuxt-link-exact-active:before,
   .link:hover:before {
-    content: "";
-    position: absolute;
-    top: -0.5em;
-    width: 0.888em;
-    border-top: 0.2em solid white;
+    opacity: 1;
   }
 </style>
