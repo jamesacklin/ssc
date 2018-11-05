@@ -2,13 +2,13 @@
   <div class="ssc-logo">
     <div class="slideshow logo-mask">
       <img
-        src="~assets/photos/photo-1453169753818-2feab4b4246d.jpeg"
+        v-lazy="require('~/assets/photos/photo-1453169753818-2feab4b4246d.jpg')"
         alt="">
       <img
-        src="~assets/photos/photo-1494488802316-82250d81cfcc.jpeg"
+        v-lazy="require('~/assets/photos/photo-1494488802316-82250d81cfcc.jpg')"
         alt="">
       <img
-        src="~assets/photos/photo-1512588920942-9dc07b71d9e4.jpeg"
+        v-lazy="require('~/assets/photos/photo-1512588920942-9dc07b71d9e4.jpg')"
         alt="">
     </div>
     <svg
@@ -30,6 +30,7 @@
 
 <style scoped>
 .logo-mask {
+  background: lime;
   position: fixed;
   z-index: -1;
   width: 110%;
@@ -42,6 +43,7 @@
 .logo-mask img {
   width: 100%;
   position: absolute;
+  mix-blend-mode: multiply;
 }
 .slideshow {
   opacity: 0.6;
@@ -69,10 +71,10 @@
     opacity: 0;
   }
   11.11% {
-    opacity: 1;
+    opacity: 0.75;
   }
   33.33% {
-    opacity: 1;
+    opacity: 0.75;
   }
   44.44% {
     opacity: 0;
