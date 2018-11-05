@@ -10,7 +10,30 @@
 export default {
   computed: {
     pageLayoutClasses() {
-      return 'mw7 ph3 pt4 pt6-m pt7-l center'
+      return 'mw7 ph3 pt4 center'
+    }
+  },
+  head() {
+    return {
+      title: `Current Inventory`,
+      meta: [
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: 'Current Inventory at Steady State Cycles'
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content:
+            'Bikes we have in stock at Steady State Cycles with size and pricing info'
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: `https://www.steadystatecycles.com${this.$route.path}`
+        }
+      ]
     }
   }
 }

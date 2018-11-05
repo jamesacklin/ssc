@@ -1,26 +1,51 @@
 const pkg = require('./package')
 
 module.exports = {
-  mode: 'spa',
+  mode: 'universal',
 
   /*
   ** Headers of the page
   */
   head: {
-    title: pkg.title,
+    titleTemplate: `%s • ${pkg.title}`,
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description },
-      { property: 'og:url', content: 'https://www.steadystatecycles.com/' },
-      { property: 'og:type', content: 'website' },
-      { property: 'og:title', content: pkg.description },
-      { property: 'og:description', content: '' },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1'
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: pkg.description
+      },
       {
         property: 'og:image',
         content: 'https://www.steadystatecycles.com/assets/og-preview.png'
       },
-      { name: 'twitter:card', content: 'summary_large_image' }
+      {
+        name: 'twitter:card',
+        content: 'summary_large_image'
+      },
+      {
+        property: 'og:type',
+        content: 'website'
+      },
+      {
+        property: 'og:url',
+        hid: 'og:url',
+        content: 'https://www.steadystatecycles.com/'
+      },
+      {
+        property: 'og:title',
+        hid: 'og:title',
+        content: pkg.title
+      },
+      {
+        property: 'og:description',
+        hid: 'og:description',
+        content: pkg.description
+      }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },

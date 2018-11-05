@@ -23,7 +23,29 @@ export default {
   },
   computed: {
     pageLayoutClasses() {
-      return 'mw7 ph3 pt4 pt6-m pt7-l center'
+      return 'mw7 ph3 pt4 center'
+    }
+  },
+  head() {
+    return {
+      title: 'Shop Info',
+      meta: [
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: 'Steady State Cycles'
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: `Pittsburgh's premier high-end road and mountain bike shop with sales, accessories, clothing, and service. Now open weekdays at 347 Lebanon Rd.`
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: `https://www.steadystatecycles.com${this.$route.path}`
+        }
+      ]
     }
   }
 }
