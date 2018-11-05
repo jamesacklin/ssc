@@ -2,7 +2,7 @@
   <section
     :class="pageLayoutClasses"
     class="container">
-    <h1>Brands We Carry</h1>
+    <h1 class="f1">Brands We Carry</h1>
   </section>
 </template>
 
@@ -10,7 +10,7 @@
 export default {
   computed: {
     pageLayoutClasses() {
-      return 'mw7 ph3 pt4 pt5-m pt5-l center'
+      return 'mw7 ph3 pt4 pt6-m pt7-l center'
     }
   }
 }

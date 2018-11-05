@@ -3,6 +3,12 @@
     <Logo/>
     <Navigation />
     <nuxt/>
+    <div class="tc pv5">
+      <img
+        src="~assets/white-diamond.svg"
+        alt="Steady State Cycles"
+        class="mw4">
+    </div>
   </div>
 </template>
 

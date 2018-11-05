@@ -1,6 +1,6 @@
 <template lang="html">
   <nav>
-    <ul class="list f4 pl3">
+    <ul class="list f3 fr pr3">
       <li>
         <nuxt-link
           class="link"
@@ -28,7 +28,7 @@ export default {
 
 <style lang="css" scoped>
   .list {
-    line-height: 2.5em;
+    line-height: 2.25em;
   }
   .link {
     color: white;
@@ -42,7 +42,7 @@ export default {
     content: "";
     position: absolute;
     top: -0.5em;
-    width: 1em;
-    border-top: 5px solid white;
+    width: 0.888em;
+    border-top: 0.2em solid white;
   }
 </style>

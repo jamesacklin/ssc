@@ -12,12 +12,6 @@
         <li class="mb3"><span class="fa-li"><font-awesome-icon icon="clock" /></span>Open Weekdays 10AM - 7PM<br>Saturday by Appointment<br>Closed Sunday</li>
       </ul>
     </div>
-    <div class="tc pv5">
-      <img
-        src="~assets/white-diamond.svg"
-        alt="Steady State Cycles"
-        class="mw4">
-    </div>
   </section>
 </template>
 
@@ -29,7 +23,7 @@ export default {
   },
   computed: {
     pageLayoutClasses() {
-      return 'mw7 ph3 pt4 pt5-m pt5-l center'
+      return 'mw7 ph3 pt4 pt6-m pt7-l center'
     }
   }
 }
