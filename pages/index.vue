@@ -41,6 +41,11 @@ export default {
           content: `Pittsburgh's premier high-end road and mountain bike shop with sales, accessories, clothing, and service. Now open weekdays at 347 Lebanon Rd.`
         },
         {
+          hid: 'description',
+          name: 'description',
+          content: `Pittsburgh's premier high-end road and mountain bike shop with sales, accessories, clothing, and service. Now open weekdays at 347 Lebanon Rd.`
+        },
+        {
           hid: 'og:url',
           property: 'og:url',
           content: `https://www.steadystatecycles.com${this.$route.path}`

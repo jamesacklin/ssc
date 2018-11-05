@@ -29,6 +29,12 @@ export default {
             'Bikes we have in stock at Steady State Cycles with size and pricing info'
         },
         {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Bikes we have in stock at Steady State Cycles with size and pricing info'
+        },
+        {
           hid: 'og:url',
           property: 'og:url',
           content: `https://www.steadystatecycles.com${this.$route.path}`
