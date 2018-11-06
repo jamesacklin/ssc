@@ -30,7 +30,7 @@
 
 <style scoped>
 .logo-mask {
-  background: lime;
+  background: rgb(116, 188, 30);
   position: fixed;
   z-index: -1;
   width: 110%;
@@ -46,7 +46,6 @@
   mix-blend-mode: multiply;
 }
 .slideshow {
-  opacity: 0.6;
 }
 .slideshow img {
   opacity: 0;
