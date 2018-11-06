@@ -1,20 +1,26 @@
 <template lang="html">
   <nav class="cf">
-    <ul class="list f3 fr pr3 pr4-m pr5-l pt0 pt4-l">
+    <ul class="list f3 fr pl0 pr3 pr4-m pr5-l pt4-l relative">
       <li>
+        <span
+          :style="{top: `${overlineTop}px`}"
+          class="overline" />
         <nuxt-link
           class="link"
-          to="/">Info</nuxt-link>
+          to="/"
+          @click.native="handleNav($event)">Info</nuxt-link>
       </li>
       <li>
         <nuxt-link
           class="link"
-          to="/inventory">Inventory</nuxt-link>
+          to="/inventory"
+          @click.native="handleNav($event)">Inventory</nuxt-link>
       </li>
       <li>
         <nuxt-link
           class="link"
-          to="/brands">Brands</nuxt-link>
+          to="/brands"
+          @click.native="handleNav($event)">Brands</nuxt-link>
       </li>
     </ul>
   </nav>
@@ -22,7 +28,34 @@
 
 <script>
 export default {
-  name: 'Navigation'
+  name: 'Navigation',
+  data: function() {
+    return {
+      overlineTop: '-28'
+    }
+  },
+  mounted: function() {
+    this.$nextTick(function() {
+      window.addEventListener('load', this.setCurrentRouteOverline)
+      window.addEventListener('resize', this.setCurrentRouteOverline)
+    })
+  },
+  methods: {
+    handleNav: function(event) {
+      this.overlineTop = this.calcOffset(event.target)
+    },
+    calcOffset(elem) {
+      var parentRect = elem.parentElement.getBoundingClientRect(),
+        elemRect = elem.getBoundingClientRect(),
+        offset = elemRect.top - parentRect.top,
+        overlinePos = elemRect.top - 28
+      return overlinePos
+    },
+    setCurrentRouteOverline() {
+      var currentRouteElem = this.$el.querySelector('.nuxt-link-exact-active')
+      this.overlineTop = this.calcOffset(currentRouteElem)
+    }
+  }
 }
 </script>
 
@@ -35,23 +68,17 @@ export default {
     position: relative;
     transition: all 0.2s ease;
   }
-  .link:before {
+  .overline {
     transition: all 0.2s ease;
     content: "";
     position: absolute;
-    top: -0.5em;
+    left: 0;
+    /* top: -333px; */
     width: 0.888em;
     border-top: 0.2em solid white;
-    opacity: 0;
-  }
-  .link:hover {
-    opacity: 0.8;
+    transition: all 0.2s ease;
   }
   .link:focus {
     outline: none;
-  }
-  .link.nuxt-link-exact-active:before,
-  .link:hover:before {
-    opacity: 1;
   }
 </style>
