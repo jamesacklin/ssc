@@ -40,6 +40,12 @@ export default {
       window.addEventListener('resize', this.setCurrentRouteOverline)
     })
   },
+  beforeDestroy: function() {
+    this.$nextTick(function() {
+      window.removeEventListener('load')
+      window.removeEventListener('resize')
+    })
+  },
   methods: {
     handleNav: function(event) {
       this.overlineTop = this.calcOffset(event.target)
