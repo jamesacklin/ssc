@@ -13,12 +13,6 @@
       <li>
         <nuxt-link
           class="link"
-          to="/inventory"
-          @click.native="handleNav($event)">Inventory</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link
-          class="link"
           to="/brands"
           @click.native="handleNav($event)">Brands</nuxt-link>
       </li>
@@ -66,6 +60,11 @@ export default {
 </script>
 
 <style lang="css" scoped>
+  @media (min-width: 1200px){
+    nav {
+      min-height: 10em;
+    }
+  }
   .list {
     line-height: 2.25em;
   }
