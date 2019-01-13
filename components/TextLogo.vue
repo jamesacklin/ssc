@@ -7,7 +7,7 @@
       media="(min-width: 59em)"
       srcset="~assets/wordmark-horiz.svg">
     <img
-      src="~assets/wordmark-vert.svg"
+      v-lazy="require('~/assets/wordmark-vert.svg')"
       alt="Steady State Cycles">
   </picture>
 </template>

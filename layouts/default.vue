@@ -1,8 +1,28 @@
 <template>
   <div>
+    <Logo/>
+    <Navigation />
     <nuxt/>
+    <div class="tc pv5">
+      <img
+        src="~assets/white-diamond.svg"
+        alt="Steady State Cycles"
+        class="mw4">
+    </div>
   </div>
 </template>
+
+<script>
+import Logo from '@/components/Logo.vue'
+import Navigation from '@/components/Navigation.vue'
+
+export default {
+  components: {
+    Logo,
+    Navigation
+  }
+}
+</script>
 
 <style>
 body {
