@@ -7,6 +7,9 @@ module.exports = {
   ** Headers of the page
   */
   head: {
+    htmlAttrs: {
+      lang: 'en-us'
+    },
     titleTemplate: `%s • ${pkg.title}`,
     meta: [
       { charset: 'utf-8' },
@@ -89,6 +92,22 @@ module.exports = {
   /*
   ** Build configuration
   */
+  generate: {
+    cache: true,
+    html: {
+      minify: {
+        collapseBooleanAttributes: true,
+        decodeEntities: true,
+        minifyCSS: true,
+        minifyJS: true,
+        processConditionalComments: true,
+        removeEmptyAttributes: true,
+        removeRedundantAttributes: true,
+        trimCustomFragments: true,
+        useShortDoctype: true
+      }
+    }
+  },
   build: {
     /*
     ** You can extend webpack config here
