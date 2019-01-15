@@ -1,4 +1,5 @@
 const pkg = require('./package')
+const webpack = require('webpack');
 
 module.exports = {
   mode: 'universal',
@@ -50,7 +51,8 @@ module.exports = {
         content: pkg.description
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+            { href: '//api.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css', rel: 'stylesheet'}]
   },
 
   /*
@@ -71,10 +73,10 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/fontawesome.js',
+    { src: '~/plugins/fontawesome.js' },
     { src: '~/plugins/vue-lazyload.js', ssr: false }
   ],
-
+  vendor: ['mapbox-gl'],
   /*
   ** Nuxt.js modules
   */
@@ -112,6 +114,11 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
+    plugins: [
+      new webpack.ProvidePlugin({
+        mapboxgl: 'mapbox-gl'
+      })
+    ],
     extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
