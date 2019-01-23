@@ -9,17 +9,22 @@
         alt="Steady State Cycles"
         class="mw4">
     </div>
+    <no-ssr>
+      <mapbox-map />
+    </no-ssr>
   </div>
 </template>
 
 <script>
 import Logo from '@/components/Logo.vue'
 import Navigation from '@/components/Navigation.vue'
+import MapboxMap from '@/components/Map.vue'
 
 export default {
   components: {
     Logo,
-    Navigation
+    Navigation,
+    MapboxMap
   }
 }
 </script>

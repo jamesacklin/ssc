@@ -29,6 +29,8 @@
     "@fortawesome/vue-fontawesome": "^0.1.2",
     "@nuxtjs/axios": "^5.0.0",
     "cross-env": "^5.2.0",
+    "mapbox-gl": "^0.48.0",
+    "mapbox-gl-vue": "^1.9.0",
     "nuxt": "^2.0.0",
     "tachyons": "^4.11.1",
     "vue-lazyload": "^1.2.6"
