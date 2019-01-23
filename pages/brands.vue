@@ -32,11 +32,6 @@ export default {
           logo: 'scott.svg'
         },
         {
-          name: 'Colnago',
-          description: 'Colnago bicycles',
-          logo: 'colnago.svg'
-        },
-        {
           name: 'Assos',
           description: 'Assos of Switzerland clothing',
           logo: 'assos.png'
