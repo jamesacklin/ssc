@@ -24,8 +24,8 @@ export default {
             'pk.eyJ1IjoiamFtZXNhY2tsaW4yIiwiYSI6ImNqcXh3bDlwZzBhY3AzeHJwbm1sM2pjOTQifQ.BPOM2BoMCgpnASR6lAS_Rg',
           mapOptions: {
             style: 'mapbox://styles/jamesacklin2/cjqxxobda0xdf2sqodb869kyq',
-            center: [-79.9284984, 40.3713688],
-            zoom: 12,
+            center: [-79.8809158, 40.4878486],
+            zoom: 13,
             interactive: false
           }
         }
@@ -46,11 +46,11 @@ export default {
                 type: 'Feature',
                 geometry: {
                   type: 'Point',
-                  coordinates: [-79.9284984, 40.3713688]
+                  coordinates: [-79.8809158, 40.4878486]
                 },
                 properties: {
                   title: 'Steady State Cycles',
-                  address: '347 Lebanon Road',
+                  address: '1153 Old Freeport Road',
                   icon: 'marker'
                 }
               }
@@ -59,7 +59,7 @@ export default {
         },
         layout: {
           'icon-image': '{icon}-15',
-          'text-field': '{title} {address}',
+          'text-field': '{address}',
           'text-font': ['Neue Haas Grotesk Text Pro 75 Bold'],
           'text-size': 24,
           'text-offset': [0, 0.6],
@@ -75,7 +75,7 @@ export default {
 </script>
 
  <style lang="css">
-  #map {
-    height: 500px;
-  }
+#map {
+  height: 500px;
+}
 </style>
