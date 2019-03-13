@@ -45,8 +45,6 @@
   position: absolute;
   mix-blend-mode: multiply;
 }
-.slideshow {
-}
 .slideshow img {
   opacity: 0;
   animation-name: fade;

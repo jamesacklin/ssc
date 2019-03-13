@@ -1,19 +1,21 @@
 const pkg = require('./package')
-const webpack = require('webpack');
+const webpack = require('webpack')
 
 module.exports = {
   mode: 'universal',
 
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
     htmlAttrs: {
       lang: 'en-us'
     },
     titleTemplate: `%s • ${pkg.title}`,
     meta: [
-      { charset: 'utf-8' },
+      {
+        charset: 'utf-8'
+      },
       {
         name: 'viewport',
         content: 'width=device-width, initial-scale=1'
@@ -51,18 +53,29 @@ module.exports = {
         content: pkg.description
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-            { href: '//api.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css', rel: 'stylesheet'}]
+    link: [
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico'
+      },
+      {
+        href: '//api.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css',
+        rel: 'stylesheet'
+      }
+    ]
   },
 
   /*
-  ** Customize the progress-bar color
-  */
-  loading: { color: 'rgb(116, 188, 30)' },
+   ** Customize the progress-bar color
+   */
+  loading: {
+    color: 'rgb(116, 188, 30)'
+  },
 
   /*
-  ** Global CSS
-  */
+   ** Global CSS
+   */
   css: [
     'tachyons/css/tachyons.min.css',
     '@fortawesome/fontawesome-svg-core/styles.css',
@@ -70,30 +83,35 @@ module.exports = {
   ],
 
   /*
-  ** Plugins to load before mounting the App
-  */
+   ** Plugins to load before mounting the App
+   */
   plugins: [
-    { src: '~/plugins/fontawesome.js' },
-    { src: '~/plugins/vue-lazyload.js', ssr: false }
+    {
+      src: '~/plugins/fontawesome.js'
+    },
+    {
+      src: '~/plugins/vue-lazyload.js',
+      ssr: false
+    }
   ],
   vendor: ['mapbox-gl'],
   /*
-  ** Nuxt.js modules
-  */
+   ** Nuxt.js modules
+   */
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios'
   ],
   /*
-  ** Axios module configuration
-  */
+   ** Axios module configuration
+   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
   },
 
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   generate: {
     cache: true,
     html: {
@@ -112,8 +130,8 @@ module.exports = {
   },
   build: {
     /*
-    ** You can extend webpack config here
-    */
+     ** You can extend webpack config here
+     */
     plugins: [
       new webpack.ProvidePlugin({
         mapboxgl: 'mapbox-gl'

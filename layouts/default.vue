@@ -3,6 +3,7 @@
     <Logo/>
     <Navigation />
     <nuxt/>
+    <MailSignup />
     <div class="tc pv5">
       <img
         src="~assets/white-diamond.svg"
@@ -17,14 +18,16 @@
 
 <script>
 import Logo from '@/components/Logo.vue'
-import Navigation from '@/components/Navigation.vue'
+import MailSignup from '@/components/MailSignup.vue'
 import MapboxMap from '@/components/Map.vue'
+import Navigation from '@/components/Navigation.vue'
 
 export default {
   components: {
     Logo,
-    Navigation,
-    MapboxMap
+    MailSignup,
+    MapboxMap,
+    Navigation
   }
 }
 </script>
