@@ -63,6 +63,11 @@ export default {
           logo: 'quarq.png'
         },
         {
+          name: 'Look',
+          description: 'Look pedals, cleats, and accessories',
+          logo: 'look.svg'
+        },
+        {
           name: 'Wahoo',
           description: 'Wahoo smart trainers and cycling computers',
           logo: 'wahoo.png'
