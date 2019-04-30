@@ -121,16 +121,6 @@ module.exports = {
       })
     ],
     extend(config, ctx) {
-      // Load SVG files inline
-      config.module.rules.push({
-        test: /\.svg$/,
-        loader: 'svg-inline-loader'
-      })
-      // Load images
-      config.module.rules.push({
-        test: /\.(gif|png|jpe?g|svg)$/i,
-        loader: 'image-webpack-loader'
-      })
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({

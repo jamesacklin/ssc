@@ -38,6 +38,8 @@
   },
   "devDependencies": {
     "@nuxt/webpack": "^2.6.3",
+    "acorn": "^6.1.1",
+    "acorn-dynamic-import": "^4.0.0",
     "babel-eslint": "^8.2.1",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^3.6.0",
@@ -47,6 +49,6 @@
     "image-webpack-loader": "^4.6.0",
     "nodemon": "^1.18.11",
     "prettier": "1.14.3",
-    "svg-inline-loader": "^0.8.0"
+    "webpack": "^4.30.0"
   }
 }
