@@ -11,7 +11,8 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint",
+    "now-build": "nuxt generate"
   },
   "now": {
     "name": "steadystatecycles",
@@ -24,25 +25,30 @@
     }
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.8",
-    "@fortawesome/free-solid-svg-icons": "^5.5.0",
-    "@fortawesome/vue-fontawesome": "^0.1.2",
-    "@nuxtjs/axios": "^5.0.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.17",
+    "@fortawesome/free-solid-svg-icons": "^5.8.1",
+    "@fortawesome/vue-fontawesome": "^0.1.6",
+    "@nuxtjs/axios": "^5.4.1",
     "cross-env": "^5.2.0",
     "mapbox-gl": "^0.48.0",
     "mapbox-gl-vue": "^1.9.0",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.6.3",
     "tachyons": "^4.11.1",
     "vue-lazyload": "^1.2.6"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0",
+    "@nuxt/webpack": "^2.6.3",
+    "acorn": "^6.1.1",
+    "acorn-dynamic-import": "^4.0.0",
     "babel-eslint": "^8.2.1",
-    "eslint": "^5.0.1",
-    "eslint-loader": "^2.0.0",
-    "eslint-plugin-vue": "^4.0.0",
-    "eslint-config-prettier": "^3.1.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^3.6.0",
+    "eslint-loader": "^2.1.2",
     "eslint-plugin-prettier": "2.6.2",
-    "prettier": "1.14.3"
+    "eslint-plugin-vue": "^4.0.0",
+    "image-webpack-loader": "^4.6.0",
+    "nodemon": "^1.18.11",
+    "prettier": "1.14.3",
+    "webpack": "^4.30.0"
   }
 }

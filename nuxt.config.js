@@ -3,10 +3,6 @@ const webpack = require('webpack')
 
 module.exports = {
   mode: 'universal',
-
-  /*
-   ** Headers of the page
-   */
   head: {
     htmlAttrs: {
       lang: 'en-us'
@@ -65,26 +61,14 @@ module.exports = {
       }
     ]
   },
-
-  /*
-   ** Customize the progress-bar color
-   */
   loading: {
     color: 'rgb(116, 188, 30)'
   },
-
-  /*
-   ** Global CSS
-   */
   css: [
     'tachyons/css/tachyons.min.css',
     '@fortawesome/fontawesome-svg-core/styles.css',
-    '~/assets/main.css'
+    '~assets/main.css'
   ],
-
-  /*
-   ** Plugins to load before mounting the App
-   */
   plugins: [
     {
       src: '~/plugins/fontawesome.js'
@@ -94,24 +78,23 @@ module.exports = {
       ssr: false
     }
   ],
-  vendor: ['mapbox-gl'],
-  /*
-   ** Nuxt.js modules
-   */
+  router: {
+    routes: [
+      {
+        path: '/',
+        name: 'index'
+      },
+      {
+        path: '/brands',
+        name: 'brands'
+      }
+    ]
+  },
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios'
   ],
-  /*
-   ** Axios module configuration
-   */
-  axios: {
-    // See https://github.com/nuxt-community/axios-module#options
-  },
-
-  /*
-   ** Build configuration
-   */
+  axios: {},
   generate: {
     cache: true,
     html: {

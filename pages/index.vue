@@ -6,22 +6,22 @@
         class="f3 mb5"
       >A Pittsburgh cycling shop for top-tier road and mountain products and service.</p>
       <ul class="list relative pl0 ml4">
-        <li class="mb3">
+        <li class="mb3 relative">
           <span class="fa-li">
             <font-awesome-icon icon="phone"/>
           </span>(412) 462-4193
         </li>
-        <li class="mb3">
+        <li class="mb3 relative">
           <span class="fa-li">
             <font-awesome-icon icon="envelope-open"/>
           </span>steadystatecyclespgh@gmail.com
         </li>
-        <li class="mb3">
+        <li class="mb3 relative">
           <span class="fa-li">
             <font-awesome-icon icon="compass"/>
           </span>1153 Old Freeport Road Pittsburgh, PA 15238
         </li>
-        <li class="mb3">
+        <li class="mb3 relative">
           <span class="fa-li">
             <font-awesome-icon icon="clock"/>
           </span>Open Weekdays 10AM - 7PM
