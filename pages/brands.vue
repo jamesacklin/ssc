@@ -27,6 +27,11 @@ export default {
     return {
       brands: [
         {
+          name: 'Cervélo',
+          description: 'Cervélo racing and performance bicycles',
+          logo: 'cervelo.svg'
+        },
+        {
           name: 'Scott',
           description: 'Scott bicycles and Syncros accessories',
           logo: 'scott.svg'

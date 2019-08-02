@@ -1,4 +1,5 @@
 <template>
+  <div>
   <section :class="pageLayoutClasses" class="container">
     <TextLogo/>
     <div class="measure lh-copy">
@@ -31,6 +32,20 @@
       </ul>
     </div>
   </section>
+  <section class="promo-banner mt4">
+    <div class="flex-l items-center justify-center">
+      <img
+        class="pv3 w-50-l"
+        v-lazy="require('~/assets/logos/cervelo.svg')"
+        :alt="`Cervélo`"
+      >
+      <div class="lh-copy ph3 pb3 pv5-l">
+        <h2 class="mb3 overline">New for 2020!</h2>
+        <p class="">Steady State Cycles is now a Cervélo dealer!<br>Stop in today and demo your new bike.</p>
+      </div>
+    </div>
+  </section>
+  </div>
 </template>
 
 <script>
@@ -73,3 +88,22 @@ export default {
   }
 }
 </script>
+
+<style lang="css">
+.promo-banner {
+  background: rgb(218, 32, 28);
+}
+
+.overline {
+  position: relative;
+}
+
+.overline::before {
+  content: "";
+  background: white;
+  width: 1.25ch;
+  height: 3px;
+  position: absolute;
+  top: -0.13em;
+}
+</style>
