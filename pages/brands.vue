@@ -37,6 +37,11 @@ export default {
           logo: 'scott.svg'
         },
         {
+          name: 'Sidi',
+          description: 'Sidi cycling footwear, made in Italy',
+          logo: 'sidi.svg'
+        },
+        {
           name: 'Assos',
           description: 'Assos of Switzerland clothing',
           logo: 'assos.png'
