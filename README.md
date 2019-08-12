@@ -2,6 +2,8 @@
 
 > A webapp for Steady State Cycles
 
+![](screenshot.png)
+
 ## Build Setup
 
 ``` bash
