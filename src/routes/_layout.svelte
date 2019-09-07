@@ -18,3 +18,7 @@
 <main>
   <slot />
 </main>
+
+<div class="tc pv5">
+  <img src="/logos/ssc-diamond.svg" alt="Steady State Cycles" class="mw4" />
+</div>

@@ -58,9 +58,18 @@
 
 <div class="ssc-logo">
   <div class="slideshow logo-mask">
-    <img src="/photos/photo-1453169753818-2feab4b4246d.jpg" alt="" />
-    <img src="/photos/photo-1494488802316-82250d81cfcc.jpg" alt="" />
-    <img src="/photos/photo-1512588920942-9dc07b71d9e4.jpg" alt="" />
+    <img
+      src="/photos/photo-1453169753818-2feab4b4246d.jpg"
+      alt=""
+      loading="lazy" />
+    <img
+      src="/photos/photo-1494488802316-82250d81cfcc.jpg"
+      alt=""
+      loading="lazy" />
+    <img
+      src="/photos/photo-1512588920942-9dc07b71d9e4.jpg"
+      alt=""
+      loading="lazy" />
   </div>
   <svg height="0" width="0">
     <defs>
