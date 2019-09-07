@@ -1,56 +1,49 @@
 <script>
-	export let segment;
+  export let segment;
 </script>
 
 <style>
-	nav {
-		border-bottom: 1px solid rgba(0,0,0,0.1);
-		font-weight: 300;
-		padding: 0 1em;
-	}
-
-	ul {
-		margin: 0;
-		padding: 0;
-	}
-
-	/* clearfix */
-	ul::after {
-		content: '';
-		display: block;
-		clear: both;
-	}
-
-	li {
-		display: block;
-		float: left;
-	}
-
-	.selected {
-		position: relative;
-		display: inline-block;
-	}
-
-	.selected::after {
-		position: absolute;
-		content: '';
-		width: calc(100% - 1em);
-		height: 2px;
-		background-color: rgb(0,0,0);
-		display: block;
-		bottom: -1px;
-	}
-
-	a {
-		text-decoration: none;
-		padding: 1em 0.5em;
-		display: block;
-	}
+  @media (min-width: 1200px) {
+    nav {
+      min-height: 10em;
+    }
+  }
+  .list {
+    line-height: 2.25em;
+  }
+  .link {
+    color: white;
+    position: relative;
+    transition: all 0.2s ease;
+  }
+  /* .overline {
+    transition: all 0.2s ease;
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0.888em;
+    border-top: 0.2em solid white;
+    transition: all 0.2s ease;
+  } */
+  .link:focus {
+    outline: none;
+  }
 </style>
 
-<nav>
-	<ul>
-		<li><a class='{segment === undefined ? "selected" : ""}' href='.'>home</a></li>
-		<li><a rel=prefetch class='{segment === "about" ? "selected" : ""}' href='about'>about</a></li>
-	</ul>
+<nav class="cf">
+  <ul class="list f3 fr pl0 pr3 pr4-m pr5-l pt4-l relative">
+    <li>
+      <a class={segment === undefined ? 'link overline' : 'link'} href=".">
+        Info
+      </a>
+    </li>
+    <li>
+      <a
+        rel="prefetch"
+        class={segment === 'about' ? 'link overline' : 'link'}
+        href="about">
+        Brands
+      </a>
+    </li>
+  </ul>
 </nav>

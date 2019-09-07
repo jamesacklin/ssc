@@ -13,3 +13,14 @@ body {
   box-sizing: border-box;
   margin: 0;
 }
+.overline {
+  position: relative;
+}
+.overline::before {
+  content: "";
+  background: white;
+  width: 1.25ch;
+  height: 3px;
+  position: absolute;
+  top: -.25em;
+}

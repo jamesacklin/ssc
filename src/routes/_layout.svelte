@@ -1,8 +1,12 @@
 <script>
-	import Nav from '../components/Nav.svelte';
+  import Nav from "../components/Nav.svelte";
 
-	export let segment;
+  export let segment;
 </script>
+
+<style>
+
+</style>
 
 <svelt:head>
   <link
@@ -10,12 +14,8 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.11.1/tachyons.css" />
 
 </svelt:head>
-
-<style>
-</style>
-
-<Nav {segment}/>
+<Nav {segment} />
 
 <main>
-	<slot></slot>
+  <slot />
 </main>

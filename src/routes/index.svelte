@@ -2,24 +2,13 @@
   .promo-banner {
     background: rgb(218, 32, 28);
   }
-  .overline {
-    position: relative;
-  }
-  .overline::before {
-    content: "";
-    background: white;
-    width: 1.25ch;
-    height: 3px;
-    position: absolute;
-    top: -0.13em;
-  }
 </style>
 
 <svelte:head>
   <title>Steady State Cycles</title>
 </svelte:head>
 
-<section class="container mw7 ph3 pt4 center">
+<section class="mw7 ph3 pt4 center">
   <div class="measure lh-copy">
     <p class="f3 mb5">
       A Pittsburgh cycling shop for top-tier road and mountain products and
