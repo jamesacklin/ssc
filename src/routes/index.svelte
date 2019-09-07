@@ -1,3 +1,7 @@
+<script>
+  import LogoText from "../components/LogoText.svelte";
+</script>
+
 <style>
   .promo-banner {
     background: rgb(218, 32, 28);
@@ -9,6 +13,7 @@
 </svelte:head>
 
 <section class="mw7 ph3 pt4 center">
+  <LogoText />
   <div class="measure lh-copy">
     <p class="f3 mb5">
       A Pittsburgh cycling shop for top-tier road and mountain products and
@@ -49,11 +54,11 @@
 <section class="promo-banner mt5">
   <div class="flex-l items-center justify-center">
     <div class="pv4 ph3 w-50-l pv0-l pl0-l pr4-l">
-      <img class="w-100" alt="`Cervélo`" />
+      <img src="/logos/cervelo.svg" class="w-100" alt="`Cervélo`" />
     </div>
     <div class="lh-copy ph3 pb3 pv5-l">
       <h2 class="mb3 overline">New for 2020!</h2>
-      <p class="">
+      <p>
         Steady State Cycles is now a Cervélo dealer!
         <br />
         Stop in today and demo your new bike.
