@@ -1,46 +1,74 @@
 <style>
-	h1, figure, p {
-		text-align: center;
-		margin: 0 auto;
-	}
-
-	h1 {
-		font-size: 2.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
-
-	figure {
-		margin: 0 0 1em 0;
-	}
-
-	img {
-		width: 100%;
-		max-width: 400px;
-		margin: 0 0 1em 0;
-	}
-
-	p {
-		margin: 1em auto;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
-	}
+  .promo-banner {
+    background: rgb(218, 32, 28);
+  }
+  .overline {
+    position: relative;
+  }
+  .overline::before {
+    content: "";
+    background: white;
+    width: 1.25ch;
+    height: 3px;
+    position: absolute;
+    top: -0.13em;
+  }
 </style>
 
 <svelte:head>
-	<title>Sapper project template</title>
+  <title>Steady State Cycles</title>
 </svelte:head>
 
-<h1>Great success!</h1>
-
-<figure>
-	<img alt='Borat' src='great-success.png'>
-	<figcaption>HIGH FIVE!</figcaption>
-</figure>
-
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+<section class="container mw7 ph3 pt4 center">
+  <div class="measure lh-copy">
+    <p class="f3 mb5">
+      A Pittsburgh cycling shop for top-tier road and mountain products and
+      service.
+    </p>
+    <ul class="list relative pl0 ml4">
+      <li class="mb3 relative">
+        <span class="fa-li">
+          <!-- <font-awesome-icon icon="phone" /> -->
+        </span>
+        (412) 462-4193
+      </li>
+      <li class="mb3 relative">
+        <span class="fa-li">
+          <!-- <font-awesome-icon icon="envelope-open" /> -->
+        </span>
+        steadystatecyclespgh@gmail.com
+      </li>
+      <li class="mb3 relative">
+        <span class="fa-li">
+          <!-- <font-awesome-icon icon="compass" /> -->
+        </span>
+        1153 Old Freeport Road Pittsburgh, PA 15238
+      </li>
+      <li class="mb3 relative">
+        <span class="fa-li">
+          <!-- <font-awesome-icon icon="clock" /> -->
+        </span>
+        Open Weekdays 10AM - 7PM
+        <br />
+        Saturday 12PM - 5PM
+        <br />
+        Closed Sunday
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="promo-banner mt5">
+  <div class="flex-l items-center justify-center">
+    <div class="pv4 ph3 w-50-l pv0-l pl0-l pr4-l">
+      <img class="w-100" alt="`Cervélo`" />
+    </div>
+    <div class="lh-copy ph3 pb3 pv5-l">
+      <h2 class="mb3 overline">New for 2020!</h2>
+      <p class="">
+        Steady State Cycles is now a Cervélo dealer!
+        <br />
+        Stop in today and demo your new bike.
+      </p>
+    </div>
+  </div>
+</section>
