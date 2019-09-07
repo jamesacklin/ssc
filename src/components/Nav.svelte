@@ -16,15 +16,6 @@
     position: relative;
     transition: all 0.2s ease;
   }
-  /* .overline {
-    transition: all 0.2s ease;
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 0.888em;
-    border-top: 0.2em solid white;
-    transition: all 0.2s ease;
-  } */
   .link:focus {
     outline: none;
   }
@@ -40,8 +31,8 @@
     <li>
       <a
         rel="prefetch"
-        class={segment === 'about' ? 'link overline' : 'link'}
-        href="about">
+        class={segment === 'brands' ? 'link overline' : 'link'}
+        href="brands">
         Brands
       </a>
     </li>
