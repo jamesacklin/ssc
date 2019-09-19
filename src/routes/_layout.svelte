@@ -1,6 +1,7 @@
 <script>
   import Nav from "../components/Nav.svelte";
   import Logo from "../components/Logo.svelte";
+  import MailSignup from "../components/MailSignup.svelte";
 
   export let segment;
 </script>
@@ -18,6 +19,8 @@
 <main>
   <slot />
 </main>
+
+<MailSignup />
 
 <div class="tc pv5">
   <img src="/logos/ssc-diamond.svg" alt="Steady State Cycles" class="mw4" />
