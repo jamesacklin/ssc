@@ -3,8 +3,25 @@
   import Logo from "../components/Logo.svelte";
   import MailSignup from "../components/MailSignup.svelte";
 
+  import {
+    Map
+  } from "@beyonk/svelte-mapbox/src/components.js";
+
+  const MapOptions = {
+    interactive: false,
+    center: [-79.8809158, 40.4878486],
+    zoom: 13
+  }
+
   export let segment;
 </script>
+
+<style>
+  .map-wrap {
+    width: 100%;
+    height: 50vh;
+  }
+</style>
 
 <svelte:head>
   <link
@@ -24,4 +41,13 @@
 
 <div class="tc pv5">
   <img src="/logos/ssc-diamond.svg" alt="Steady State Cycles" class="mw4" />
+</div>
+
+<div class="map-wrap">
+  <Map
+    accessToken="pk.eyJ1IjoiamFtZXNhY2tsaW4yIiwiYSI6ImNqcXh3bDlwZzBhY3AzeHJwbm1sM2pjOTQifQ.BPOM2BoMCgpnASR6lAS_Rg"
+    style="mapbox://styles/jamesacklin2/cjqxxobda0xdf2sqodb869kyq"
+    options={MapOptions}
+  >
+  </Map>
 </div>
