@@ -3,11 +3,12 @@
   import Logo from "../components/Logo.svelte";
   import MailSignup from "../components/MailSignup.svelte";
 
-  import {
-    Map
-  } from "@beyonk/svelte-mapbox/src/components.js";
+  import { Map } from "@beyonk/svelte-mapbox/src/components.js";
+  import Marker from "../components/Marker.svelte";
 
-  const MapOptions = {
+  let mapComponent;
+
+  let mapOptions = {
     interactive: false,
     center: [-79.8809158, 40.4878486],
     zoom: 13
@@ -45,9 +46,11 @@
 
 <div class="map-wrap">
   <Map
+    bind:this={mapComponent}
     accessToken="pk.eyJ1IjoiamFtZXNhY2tsaW4yIiwiYSI6ImNqcXh3bDlwZzBhY3AzeHJwbm1sM2pjOTQifQ.BPOM2BoMCgpnASR6lAS_Rg"
     style="mapbox://styles/jamesacklin2/cjqxxobda0xdf2sqodb869kyq"
-    options={MapOptions}
+    options={mapOptions}
   >
+    <Marker label="Steady State Cycles" lat="{mapOptions.center[1]}" lon="{mapOptions.center[0]}" />
   </Map>
 </div>
