@@ -1,5 +1,9 @@
 {
   "version": 2,
+  "alias": [
+    "steadystatecycles.com",
+    "www.steadystatecycles.com"
+  ],
   "builds": [
     {
       "src": "package.json",
